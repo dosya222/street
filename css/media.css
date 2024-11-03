@@ -1,0 +1,110 @@
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .header__burger {
+        display: block;
+        margin-left: auto;
+
+    }
+    .menu {
+
+        position: absolute;
+        top: 100%;
+        right: 20px;
+        flex-direction: column;
+        gap: 0;
+        background: var(--header-bg);
+        min-width: 200px;
+        transform: scaleY(0);
+        transition: 0.5s;
+        transform-origin: 0 0;
+        z-index: 100;
+    }
+    .header__burger:focus ~ .menu {
+        transform: scaleY(1);
+    }
+    .menu__link {
+        padding: 20px;
+
+    }
+    .menu__link:hover {
+        background: rgba(105, 207, 23, 0.7);
+    }
+    .menu__link::after {
+        left: 0;  
+        top: 0;  
+    }
+
+
+/* чет не могу выпрямить menu__link к бургеру */
+
+    .header {
+        padding: 10px 0;
+    }
+    .header__title {
+        font-size: 50px;
+    }
+.content {
+    position: relative;
+}
+
+.header__price {
+    padding: 15px;
+    font-size: 40px;
+}
+.header__look {
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+.burgerlist {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main__menu {
+    display: flex;
+    justify-content: center;
+}
+    
+} 
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+    .logo__img {
+        width: 70px;
+    }
+    .logo {
+        font-size: 16px;
+    }
+}
+ 
